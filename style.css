@@ -1,0 +1,229 @@
+:root {
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherited;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100svh;
+}
+
+body {
+  background-color: #fff0df;
+}
+
+.container {
+  height: 100svh;
+  display: grid;
+  place-content: center;
+}
+
+select {
+  background-color: #546a76;
+  color: white;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: 0.2rem solid grey;
+}
+
+option {
+  color: white;
+}
+
+/* input-box */
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+#input_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+select:hover,
+select:focus,
+#input_wrap > input:hover,
+#input_wrap > input:focus,
+ul :hover {
+  border: 0.2rem solid black;
+}
+
+#input_wrap > input {
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: background-color 0.5s;
+  border: 0.2rem solid grey;
+}
+
+/* list */
+#lists_wrap {
+  margin: 10px 0;
+}
+
+li > span {
+  flex-grow: 1;
+  border: none;
+  pointer-events: none;
+}
+
+li > button {
+  margin: 0 1rem;
+  background-color: #546a76;
+  color: white;
+  padding: 0.5rem;
+}
+
+ul > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 6px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 0.2rem solid grey;
+}
+
+#to_do_list > li > span {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  height: 100%;
+  margin: auto 0.5rem;
+}
+
+#add_btn {
+  width: 40px;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #546a76;
+  color: #fff;
+  border: 0.1;
+}
+
+.del_button {
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #546a76;
+  color: #fff;
+}
+
+.other_btn {
+  border-radius: 1rem;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #546a76;
+  color: #fff;
+}
+
+button {
+  border: 0.2rem solid grey;
+}
+button:hover,
+button:focus {
+  border: 0.2rem solid black;
+  border-radius: 0.2rem;
+  border-color: #283338;
+}
+
+.normal {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.important {
+  background-color: orange;
+}
+
+.urgent {
+  background-color: red;
+}
+
+.github {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 2;
+  :hover {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    font-size: 3rem;
+    color: #fff;
+    scale: 0.9;
+  }
+}
+.github::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 0 100px;
+  border-color: transparent transparent transparent #6e5494;
+}
+.github .fa {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 0.8rem;
+  }
+  .github {
+    width: 70px;
+    height: 70px;
+  }
+  .github::before {
+    border-width: 70px 0 0 70px;
+  }
+  .github .fa {
+    left: 8px;
+    bottom: 4px;
+    font-size: 2rem;
+  }
+}

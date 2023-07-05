@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js" defer></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N8M5XR8");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <!-- <div style="position: relative"> -->
+    <div class="container" id="title">
+      <div class="title">待辦事項</div>
+      <div id="input_wrap">
+        <input type="text" id="input" />
+        <button id="add_btn" type="button">+</button>
+        <select id="importance">
+          <option value="normal">一般</option>
+          <option value="important">重要</option>
+          <option value="urgent">緊急</option>
+        </select>
+      </div>
+
+      <div id="lists_wrap">
+        <ul id="to_do_list"></ul>
+        <button class="other_btn" id="export_btn" type="button">
+          匯出為純文字
+        </button>
+        <button class="other_btn" id="save_btn" type="button">儲存</button>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="myNav" style="position: relative">
+      <iframe
+        src="https://superyngo.github.io/myNavbar/"
+        width="100%"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="github">
+      <a href="https://github.com/superyngo/Travel-Maker">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </body>
+</html>
